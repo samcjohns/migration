@@ -11,7 +11,7 @@ CREATE TABLE Teams(
     teamID         VARCHAR(3) NOT NULL,
     franchID       VARCHAR(3) NOT NULL,
     divID          VARCHAR(1),
-    Rank           INTEGER  NOT NULL,
+    lgRank           INTEGER  NOT NULL,
     G              INTEGER  NOT NULL,
     Ghome          INTEGER,
     W              INTEGER  NOT NULL,
@@ -205,7 +205,7 @@ CREATE TABLE Managers(
     G        INTEGER  NOT NULL,
     W        INTEGER  NOT NULL,
     L        INTEGER  NOT NULL,
-    rank     INTEGER  NOT NULL,
+    lgRank     INTEGER  NOT NULL,
     plyrMgr  VARCHAR(1),
 
     PRIMARY KEY (playerID, yearID, teamID, lgID)
